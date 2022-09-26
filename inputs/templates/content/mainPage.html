@@ -1,0 +1,23 @@
+{% extends 'base_one.html' %} {% block content %}
+<div class="container ">
+    <div class="row justify-content-center mt-5">
+        <div class=" col col-sm-12 text-center mt-5 pt-5">
+            <h1 class="display-2 ">Welcome</h1>
+        </div>
+    </div>
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col border">
+                <p class="mt-3 lead ">You can add a patient and save it for future visits.</p> <br>
+                <a href="{% url 'add-patient' %}" class="btn btn-secondary mt-2 mb-3">Add New Patient</a>
+            </div>
+            <div class="col border">
+                <p class="mt-3 lead ">Soap Note</p> <br>
+                <a href="{% url 'mainform' %} " class="btn btn-secondary mt-2 mb-3">Soap Note Template</a>
+                <a href="{% url 'patientform' %} " class="btn btn-secondary mt-2 mb-3">Add Patient to Note</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}

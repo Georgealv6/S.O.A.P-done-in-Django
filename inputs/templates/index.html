@@ -1,0 +1,17 @@
+{% extends 'base_one.html' %} {% block content %}
+<div class="container ">
+    <div class="row justify-content-center mt-5">
+        <div class=" col col-sm-12 text-center mt-5 pt-5">
+            <h1 class="display-2 ">Electronic SOAP Note for Everyone</h1>
+            <p class="mt-3 lead ">you don't have to sign up to use just click the button bellow.</p>
+            <div class="d-flex justify-content-center mt-5 ">
+                <a href="{% url 'account_login' %} " class="btn btn-light mr-2 ">Log In</a>
+                <a href="{% url 'account_signup' %} " class="btn btn-dark ">Register</a>
+            </div>
+            <div class="d-flex justify-content-center mt-5 ">
+                <a href="{% url 'form' %} " class="btn btn-light mr-2 ">Free Soap Template</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
